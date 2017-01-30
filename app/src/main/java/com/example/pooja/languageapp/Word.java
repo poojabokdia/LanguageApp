@@ -7,13 +7,8 @@ public class Word {
     private String mDefaultTranslation;
     private String mTranslation;
     private int mImageResourceId;
-    private int mAudio;
-    public Word(String defaultTranslation,String translation,int ImageResourceId,int audio){
-        mDefaultTranslation=defaultTranslation;
-        mTranslation=translation;
-        mImageResourceId=ImageResourceId;
-        mAudio=audio;
-    }
+
+
     public Word(String defaultTranslation,String translation){
         mDefaultTranslation=defaultTranslation;
         mTranslation=translation;
@@ -30,5 +25,5 @@ public class Word {
         return mTranslation;
     }
     public int getImageResourceId(){return  mImageResourceId;}
-    public int getAudio(){return mAudio;}
+
 }

@@ -35,14 +35,14 @@ public class ColorsActivity extends Activity {
             }
         });
         final ArrayList<Word> color=new ArrayList<Word>();
-        color.add(new Word("red","rojo",R.mipmap.color_red,R.raw.red));
-        color.add(new Word("white","blanco",R.mipmap.color_white,R.raw.white));
-        color.add(new Word("green","verde",R.mipmap.color_green,R.raw.green));
-        color.add(new Word("black","negro",R.mipmap.color_black,R.raw.black));
-        color.add(new Word("yellow","amarillo",R.mipmap.color_mustard_yellow,R.raw.yellow));
-        color.add(new Word("blue","azul",R.mipmap.ic_launcher,R.raw.blue));
-        color.add(new Word("brown","marrón",R.mipmap.color_brown,R.raw.brown));
-        color.add(new Word("grey","gris",R.mipmap.color_gray,R.raw.gray));
+        color.add(new Word("red","rojo",R.mipmap.color_red));
+        color.add(new Word("white","blanco",R.mipmap.color_white));
+        color.add(new Word("green","verde",R.mipmap.color_green));
+        color.add(new Word("black","negro",R.mipmap.color_black));
+        color.add(new Word("yellow","amarillo",R.mipmap.color_mustard_yellow));
+        color.add(new Word("blue","azul",R.mipmap.color_blue));
+        color.add(new Word("brown","marrón",R.mipmap.color_brown));
+        color.add(new Word("grey","gris",R.mipmap.color_gray));
         colorAdapter adapter = new colorAdapter(this,color);
         ListView listView = (ListView) findViewById(R.id.colorList);
         listView.setAdapter(adapter);
@@ -89,9 +89,7 @@ public class ColorsActivity extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }

@@ -37,16 +37,16 @@ public class NumbersActivity extends Activity {
             }
         });
         final ArrayList<Word> words=new ArrayList<Word>();
-        words.add(new Word("one","uno",R.mipmap.number_two,R.raw.one));
-        words.add(new Word("two","dos",R.mipmap.number_two,R.raw.two));
-        words.add(new Word("three","tres",R.mipmap.number_three,R.raw.three));
-        words.add(new Word("four","cuatro",R.mipmap.number_four,R.raw.four));
-        words.add(new Word("five","cinco",R.mipmap.number_five,R.raw.five));
-        words.add(new Word("six","seis",R.mipmap.number_six,R.raw.six));
-        words.add(new Word("seven","siete",R.mipmap.number_seven,R.raw.seven));
-        words.add(new Word("eight","ocho",R.mipmap.number_eight,R.raw.eight));
-        words.add(new Word("nine","nueve",R.mipmap.number_nine,R.raw.nine));
-        words.add(new Word("ten","diez",R.mipmap.number_ten,R.raw.ten));
+        words.add(new Word("one","uno",R.mipmap.one));
+        words.add(new Word("two","dos",R.mipmap.two));
+        words.add(new Word("three","tres",R.mipmap.three));
+        words.add(new Word("four","cuatro",R.mipmap.four));
+        words.add(new Word("five","cinco",R.mipmap.five));
+        words.add(new Word("six","seis",R.mipmap.six));
+        words.add(new Word("seven","siete",R.mipmap.seven));
+        words.add(new Word("eight","ocho",R.mipmap.eight));
+        words.add(new Word("nine","nueve",R.mipmap.nine));
+        words.add(new Word("ten","diez",R.mipmap.ten));
 
 
         WordAdapter adapter = new WordAdapter(this,words);
@@ -99,9 +99,7 @@ public class NumbersActivity extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }
