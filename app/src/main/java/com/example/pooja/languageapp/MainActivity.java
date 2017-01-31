@@ -7,6 +7,7 @@ import android.speech.tts.TextToSpeech;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -43,6 +44,14 @@ public class MainActivity extends Activity{
         phrases.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent i=new Intent(MainActivity.this,PhrasesActivity.class);
+                startActivity(i);
+            }
+        });
+        Button translate=(Button)findViewById(R.id.translate);
+        translate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,TranslateActivity.class);
                 startActivity(i);
             }
         });
